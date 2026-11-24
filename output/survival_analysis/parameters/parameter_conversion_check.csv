@@ -1,0 +1,25 @@
+"curve","distribution","max_survival_difference"
+"pfs_dato","Exponential",1.11022302462516e-16
+"pfs_dato","Weibull",1.11022302462516e-16
+"pfs_dato","Gompertz",1.11022302462516e-16
+"pfs_dato","Log logistic",1.66533453693773e-16
+"pfs_dato","Log normal",5.55111512312578e-17
+"pfs_dato","Generalized Gamma",1.9151347174784e-15
+"pfs_icc","Exponential",1.11022302462516e-16
+"pfs_icc","Weibull",1.11022302462516e-16
+"pfs_icc","Gompertz",1.11022302462516e-16
+"pfs_icc","Log logistic",1.65232411086791e-16
+"pfs_icc","Log normal",5.55111512312578e-17
+"pfs_icc","Generalized Gamma",2.22044604925031e-16
+"os_dato","Exponential",1.11022302462516e-16
+"os_dato","Weibull",1.11022302462516e-16
+"os_dato","Gompertz",1.38777878078145e-16
+"os_dato","Log logistic",2.22044604925031e-16
+"os_dato","Log normal",5.55111512312578e-17
+"os_dato","Generalized Gamma",7.7715611723761e-16
+"os_icc","Exponential",1.11022302462516e-16
+"os_icc","Weibull",1.11022302462516e-16
+"os_icc","Gompertz",1.11022302462516e-16
+"os_icc","Log logistic",2.22044604925031e-16
+"os_icc","Log normal",1.11022302462516e-16
+"os_icc","Generalized Gamma",1.27675647831893e-15

@@ -1,0 +1,24 @@
+Runtime measurement protocol
+
+R and Python
+
+Each implementation was evaluated in 50 fresh processes. Each replicate included a base-case analysis, a one-way sensitivity analysis (OWSA) of 59 parameters at two bounds, and a probabilistic sensitivity analysis (PSA) with 1,000 draws. The model comprised two strategies and 260 cycles. Engine order alternated between replicates. Each process ran one untimed base case and invoked garbage collection before each measurement. The seed was 20261031 plus the replicate number.
+
+Base-case timing included model construction. OWSA and PSA timing covered the native analysis calls and their returned result objects. Package loading, analysis-definition construction, plotting and file export occurred outside the measured intervals. The baseline experiment used serial execution with one BLAS/OpenMP thread per process.
+
+Command from the project root:
+  .venv/bin/python scripts/benchmark/benchmark.py --label replication
+
+The default run writes observations, summary statistics, median time ratios, environment metadata and a log to output/benchmark/runs/baseline/. Repeating a run with the same label replaces its timing files.
+
+Excel
+
+The Excel experiment used 64-bit Excel for Mac. Prepare a workbook copy named US_benchmark.xlsm and import scripts/benchmark/modBenchmark.bas, or use the prepared workbook in workbooks/benchmark/. Close other workbooks and run the Excel and R/Python batches sequentially.
+
+1. Run BenchmarkExcelPilot for one OWSA and one 1,000-draw PSA.
+2. Run BenchmarkExcelOWSA50 and BenchmarkExcelPSA50 for 50 replicates each.
+3. Collect the two exported CSV files beside the workbook and place them in output/benchmark/runs/excel/.
+
+Excel reused one open workbook across repetitions and retained its application threading settings. Macro timing included worksheet output and formatting. Excel OWSA evaluated 97 parameters, including parameters for alternative survival distributions. The macro restores the original PSA iteration setting after completion.
+
+The two Excel files each contained trials 1–50 with positive elapsed times. The PSA setting was 1,000 draws. The three-platform PSA summary is in output/benchmark/psa_runtime.csv.

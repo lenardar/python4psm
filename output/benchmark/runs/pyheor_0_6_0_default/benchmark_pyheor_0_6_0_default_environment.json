@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-01T01:50:37.580018+00:00",
+  "platform": "macOS-15.7.8-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": "3.12.14",
+  "repeats": 50,
+  "psa_draws": 1000,
+  "package_versions": {
+    "pyheor": "0.6.0",
+    "heemod": "1.1.0"
+  },
+  "engine_selection": "pyheor",
+  "cycles": 260,
+  "strategies": 2,
+  "fresh_process_per_replicate": true,
+  "warmup": "One untimed base case per process",
+  "parallel": false,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "timed": "Native calculation calls; base includes model construction. No import, plots or file IO.",
+  "source_sha256": {
+    "python_version/run.py": "472d9061059879600399d82d6be2f66626a4d711327debfcf6fb3cea242ad66a",
+    "python_version/benchmark.py": "be345aa20fbe1f91c1c54970ad51a3fec17af1619813ebbb1c8f606e2bb11c17",
+    "python_version/model.py": "cde3b41acaddb9b8d86058fa1a9acf233f922272a9664cdb3b24c9b10090d5b5",
+    "python_version/parameters.py": "e16a6b885389f12eac15f2051b384718d73fce05c55cf0f6d895ceabf422b6e5",
+    "r_version/parameters.R": "a4b617836d4890c9dcf7f31d11d062db94aef87652036f4ff5a5741253a702c0",
+    "r_version/model.R": "2089c9abb25d70f41813c3f48fc0bd014155681fdc73b4aa49a3bc31d9a8bb2d",
+    "r_version/benchmark.R": "39d7f51e33690d0335602d19f6b00f4daba62e76e59c5611ab0f94275618b20d",
+    "r_version/run.R": "98de6189c1c7bed8fe0175ee0c15a52b00a433c4a06ccfd3cd2c9eb6282ff94a"
+  },
+  "cpu": "Apple M2",
+  "memory_bytes": 17179869184,
+  "default_n_jobs": 1,
+  "unchanged_model_parameters_and_worker": true,
+  "comparison_baseline": "benchmark_times.csv (pyheor 0.5.0; previous day)",
+  "completed_utc": "2026-11-01T02:02:41.081156+00:00",
+  "complete_replicates": 50,
+  "observations": "All observations retained; timings rose and varied during the run. Cause not established. Historical baseline, not interleaved old/new runs."
+}

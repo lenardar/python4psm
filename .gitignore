@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+~$*
+/manuscript/
+*.doc
+*.docx
+/data/survival/os_raw.jpg
+/data/survival/pfs_raw.jpg
